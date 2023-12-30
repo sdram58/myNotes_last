@@ -20,7 +20,7 @@ fun App():Unit = with(AppState) {
 
     if(state.notes == null){
         LaunchedEffect(true){
-            loadNotes()
+            loadNotes(this)
         }
     }
 
